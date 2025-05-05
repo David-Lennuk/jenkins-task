@@ -6,10 +6,10 @@ pipeline {
 				sh "npm install"
 				}
 			}
-		stage('Install dependencies') {
-			steps {
-				sh "node film.js"
-				}
+	stage('test') {
+		steps {
+			sh "node film.js"
 			}
+		}
 }
 }
